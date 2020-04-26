@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lavafishing",
+  "version": "${version}",
+
+  "name": "Lava Fishing",
+  "description": "Lets you fish in lava!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/lavafishing/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "mc.lavafishing.main.LavaFishing"
+      }
+    ]
+  },
+  "mixins": [
+    "lavafishing.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.1",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "~1.16-alpha.20.16.a"
+  },
+  "suggests": {
+    "flamingo": "*"
+  },
+  "accessWidener" : "bobber.accesswidener"
+}
