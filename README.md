@@ -1,2 +1,3 @@
-# lava-fishing
-A fabric minecraft mod that allows you to fish in lava
+# Lava Fishing
+
+This is the repository for the minecraft lava fishing mod
