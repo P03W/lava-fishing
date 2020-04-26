@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "lavafishing:lava_eel"
+    "item": "lavafishing:crimson_salmon"
   },
-  "result": "lavafishing:lava_eel_cooked",
+  "result": "lavafishing:crimson_salmon_cooked",
   "experience": 0.2,
   "cookingtime": 200
 }

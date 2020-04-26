@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "lavafishing:lava_eel"
+    "item": "lavafishing:warped_cod"
   },
-  "result": "lavafishing:lava_eel_cooked",
+  "result": "lavafishing:warped_cod_cooked",
   "experience": 0.2,
   "cookingtime": 200
 }
