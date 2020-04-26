@@ -6,11 +6,12 @@
   "name": "Lava Fishing",
   "description": "Lets you fish in lava!",
   "authors": [
-    "Me!"
+    "TheoreticallyUseful"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/P03W/lava-fishing",
+    "sources": "https://github.com/P03W/lava-fishing",
+    "issues": "https://github.com/P03W/lava-fishing/issues"
   },
 
   "license": "MIT",
