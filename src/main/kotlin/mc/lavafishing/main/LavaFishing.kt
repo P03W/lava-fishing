@@ -142,6 +142,7 @@ object LavaFishing : ModInitializer {
                 .put(Items.IRON_NUGGET, 6)
                 .put(Items.GOLD_NUGGET, 4)
                 .put(LAVA_BOTTLE, 1)
+                .put(Items.NETHER_WART, 4)
                 .build()
 
         FISH = ImmutableMap.builder<Item, Int>()
