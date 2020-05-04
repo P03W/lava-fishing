@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "LavaFishingBobber",
-    "ItemHealth"
+    "ItemHealth",
+    "SnapshotFix"
   ],
   "injectors": {
     "defaultRequire": 1
