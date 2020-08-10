@@ -14,7 +14,7 @@ public class ItemHealth {
     @Inject(at = @At("RETURN"), method = "method_24348()V")
     public void manipHealth(CallbackInfo ci) {
         ItemEntity ie = (ItemEntity) (Object) this;
-        if (ie.world.dimension.isNether()) {
+        if (ie.world.getDimension().isPiglinSafe()) {
             health *= 250;
         }
     }

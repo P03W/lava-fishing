@@ -77,7 +77,7 @@ public class LavaFishingBobber {
         BlockState blockState = world.getBlockState(pos);
         if (!blockState.isAir() && blockState.getBlock() != Blocks.LILY_PAD) {
             FluidState fluidState = blockState.getFluidState();
-            return fluidState.matches(FluidTags.WATER) && fluidState.isStill() && blockState.getCollisionShape(this.world, pos).isEmpty() ? FishingBobberEntity.PositionType.INSIDE_WATER : FishingBobberEntity.PositionType.INVALID;
+            return FluidTags.WATER.contains(fluidState.getFluid()) && fluidState.isStill() && blockState.getCollisionShape(this.world, pos).isEmpty() ? FishingBobberEntity.PositionType.INSIDE_WATER : FishingBobberEntity.PositionType.INVALID;
         } else {
             return FishingBobberEntity.PositionType.ABOVE_WATER;
         }
@@ -116,7 +116,7 @@ public class LavaFishingBobber {
         FishingBobberEntity fbe = (FishingBobberEntity) (Object) this;
         BlockPos blockPos = fbe.getBlockPos();
         FluidState fluidState = fbe.world.getFluidState(blockPos);
-        if (fluidState.matches(FluidTags.LAVA)) {
+        if (FluidTags.LAVA.contains(fluidState.getFluid())) {
             f = fluidState.getHeight(fbe.world, blockPos);
         }
         boolean bl = f > 0.0F;
@@ -135,7 +135,7 @@ public class LavaFishingBobber {
         ServerWorld serverWorld = (ServerWorld) fbe.world;
         int i = 1;
         BlockPos blockPos = pos.up();
-        if (fbe.world.dimension.isNether()) {
+        if (fbe.world.getDimension().isPiglinSafe()) {
             if (fbe.random.nextFloat() < 0.25F && fbe.world.hasRain(blockPos)) {
                 ++i;
             }
